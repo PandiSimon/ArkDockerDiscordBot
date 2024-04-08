@@ -6,10 +6,10 @@ import docker
 from interactions import slash_command, SlashContext
 
 dockerClient = docker.from_env()
-serverContainer1 = dockerClient.containers.get("ASA-Pandi-TI")
-serverContainer2 = dockerClient.containers.get("ASA-Pandi-SE")
-guild_id=1218576575012933714
-bot = interactions.Client(token="MTIyNjI5Mjg1Njk0MDEzODU4Ng.G2DEoh.zGFKUnhJEi9q01wFnNC9bW3Z2F_V_cPIRwt_Ec")
+serverContainer1 = dockerClient.containers.get("Name of the first Container")
+serverContainer2 = dockerClient.containers.get("Name of the second Container")
+guild_id=Your Server ID Here
+bot = interactions.Client(token="Your Token Here")
 
 @interactions.slash_command(
     name="arkhelp",
